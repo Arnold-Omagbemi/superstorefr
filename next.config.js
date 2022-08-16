@@ -6,8 +6,8 @@ const nextConfig = {
   },
   swcMinify: true,
   async redirects() {
-    return [{ source: "/canceled", destination: "/", permanent: true }]
-  }
+    return [{ source: "/canceled", destination: "/", permanent: true }];
+  },
 };
 
 module.exports = nextConfig
