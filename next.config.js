@@ -5,13 +5,7 @@ const nextConfig = {
     styledComponents: true,
   },
   async redirects() {
-    return [
-      {
-        source: "/canceled",
-        destination: "/",
-        permanent: true,
-      },
-    ];
+    return [{ source: "/cancel", destination: "/", permanent: true }];
   },
   //swcMinify: true,
 };
