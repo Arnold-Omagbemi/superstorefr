@@ -102,7 +102,7 @@ const handleCheckout = async () => {
            </Cards>
            {cartItems.length >= 1 && (
              <Checkout layout>
-                <h3>Subtotal: {totalPrice}$</h3>
+                <h3>Subtotal: ${totalPrice}</h3>
                 <button onClick={handleCheckout}>Purchase</button>
              </Checkout>
            )}
