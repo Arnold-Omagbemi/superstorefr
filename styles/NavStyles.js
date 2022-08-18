@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const NavStyles = styled.nav`
   min-height: 15vh;
   display: flex;
@@ -9,8 +10,11 @@ export const NavStyles = styled.nav`
   color: #303030;
   a {
     font-size: 1.2rem;
+    color: chocolate;
   }
 `;
+
+
 
 export const NavItems = styled.div`
   display: flex;

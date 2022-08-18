@@ -12,7 +12,7 @@ export default function Nav() {
     const {showCart, setShowCart, totalQuantities} = useStateContext();
     return (
         <NavStyles>
-        <Link href={"/"}>Teesbytris.</Link>
+                <Link href={"/"}>Baked</Link>
         <NavItems>
             <User />
         <div onClick={() => setShowCart(true)}>
