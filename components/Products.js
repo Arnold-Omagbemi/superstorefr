@@ -1,11 +1,13 @@
-import { ProductStyle } from '../styles/ProductStlye';
+import { ProductLayout ,ProductStyle } from '../styles/ProductStlye';
 import Link from "next/link";
 
 export default function Product({ product }) {
 //Extract the info from props
  const { title, price, image, slug } = product.attributes;
     return (
-       <ProductStyle>
+      <section>
+      <ProductLayout>
+         <ProductStyle>
          <Link href={`product/${slug}`}>
          <div>
             <img src={image.data.attributes.formats.small.url} alt="" />
@@ -14,5 +16,8 @@ export default function Product({ product }) {
           <h2>{title}</h2>
           <h3>${price}</h3> 
        </ProductStyle>
+      </ProductLayout>
+      </section>
     );
 }
+

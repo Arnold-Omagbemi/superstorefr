@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 
 export const NavStyles = styled.nav`
-  min-height: 15vh;
+  padding: 0 12%;
+  background-color: #150f0f;
+  min-height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
   color: #303030;
   a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: chocolate;
+    Font-weight: bold;
   }
 `;
 
@@ -29,6 +32,7 @@ export const NavItems = styled.div`
     cursor: pointer;
   }
   h3 {
+    color: #fff;
    font-size: 0.75rem;
    padding: 0.25rem;
   }
